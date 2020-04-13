@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "GithubAPI-IP2": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GithubAPI-IP2"
+    }
+  },
+  "defaultProject": "GithubAPI-IP2",
+  "cli": {
+    "analytics": "4a09b376-7f14-4964-bff8-485b052b6924"
+  }
 }
