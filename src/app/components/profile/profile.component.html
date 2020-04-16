@@ -1,1 +1,21 @@
-<p>profile works!</p>
+<div *ngIf="profile">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{profile.name}} || <small> Github: {{profile.login}}</small>
+      <p *ngIf="profile.location">Location: {{profile.location}}</p>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="profile picture">
+        </div>
+        <div class="col-sm-3">
+          <ul class="list-group">
+            <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+            <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
